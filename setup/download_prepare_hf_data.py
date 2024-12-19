@@ -72,7 +72,7 @@ def setup_terashuf(work_dir):
         return terashuf_dir
 
     print("Setting up terashuf...")
-    run_command(f"git clone https://github.com/alexandres/terashuf {terashuf_dir}")
+    run_command(f"git clone git@github.com:alexandres/terashuf {terashuf_dir}")
     run_command(f"make -C {terashuf_dir}")
     return terashuf_dir
 
