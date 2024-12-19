@@ -32,9 +32,10 @@ The following commands launch a SLURM job that creates an environment for Meta L
 The env creation should take around 5 minutes without counting downloads.
 
 ```bash
-git clone https://github.com/facebookresearch/blt
+git clone git@github.com:facebookresearch/blt
 cd blt
 
+export CONDA_ROOT="$HOME/miniconda3"
 bash setup/create_env.sh
 # or if you have access to a SLURM cluster
 sbatch setup/create_env.sh
